@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa; /* Warna latar belakang yang lembut */
+        }
+        
+        .container {
+            background-color: rgb(247, 161, 242);
+            padding: 40px;
+            max-width: 600px;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%; 
+        }
+        
+        form {
+            text-align: left; 
+        }
+        
+        .form-control, .form-select {
+            width: 100%; 
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box; 
+        }
+        
+        button[type="submit"] {
+            background-color: hsl(330, 97%, 59%);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            width: 100%; 
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #ff559a;
+        }
+        
+        .mb-3 {
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            margin-bottom: 30px;
+            color: #fff; /* Warna teks yang kontras dengan latar belakang container */
+        }
+        
+        @media (max-width: 576px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Form Biodata Diri</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" placeholder="Masukkan nama lengkap" required>
+            </div>
+            <div class="mb-3">
+                <label for="nim" class="form-label">NIM</label>
+                <input type="number" class="form-control" id="nim" placeholder="Masukkan NIM Anda" required>
+            </div>
+            <div class="mb-3">
+                <label for="tanggallahir" class="form-label">Tanggal Lahir</label>
+                <input type="date" class="form-control" id="tanggallahir" required>
+            </div>
+            <div class="mb-3">
+                <label for="beratbadan" class="form-label">Berat Badan (kg)</label>
+                <input type="number" class="form-control" id="beratbadan" placeholder="Masukkan berat badan Anda (kg)" required>
+            </div>
+            <div class="mb-3">
+                <label for="tinggibadan" class="form-label">Tinggi Badan (cm)</label>
+                <input type="number" class="form-control" id="tinggibadan" placeholder="Masukkan tinggi badan Anda (cm)" required>
+            </div>
+            <div class="mb-3">
+                <label for="agama" class="form-label">Agama</label>
+                <input type="text" class="form-control" id="agama" placeholder="Masukkan agama Anda" required>
+            </div>
+            <div class="mb-3">
+                <label for="alamat" class="form-label">Alamat</label>
+                <input type="text" class="form-control" id="alamat" placeholder="Masukkan alamat Anda" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda" required>
+            </div>
+            <div class="mb-3">
+                <label for="noTelpon" class="form-label">Nomor Telepon</label>
+                <input type="tel" class="form-control" id="noTelpon" placeholder="Masukkan nomor telepon Anda" required>
+            </div>
+            <div class="mb-3">
+                <label for="hobi" class="form-label">Hobi</label>
+                <input type="text" class="form-control" id="hobi" placeholder="Masukkan hobi Anda" required>
+            </div>
+            <div class="mb-3">
+                <label for="jeniskelamin" class="form-label">Jenis Kelamin</label>
+                <select class="form-select form-control" id="jeniskelamin" required>
+                    <option value="" selected disabled>Pilih jenis kelamin</option>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+    </div>
+
+    <!-- Optional JavaScript for Bootstrap (jQuery and Bootstrap JS) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXd2eAWv6tV5jBR1I4qe5QQOX6mL6BvvV1/NZBtsI9eCTeBW1A30nIWc1x7UR3C" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4/JqsDZcG9Bo6BnEY+MFIUL5SGyscK1qsF2gXR9tIkJD2VF59M8xEBDuZ" crossorigin="anonymous"></script>
+</body>
+</html>
